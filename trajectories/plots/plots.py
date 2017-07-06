@@ -2,7 +2,7 @@ from plot_functions import myplot , area , ref_lines
 from matplotlib import pyplot as plt
 import matplotlib as mpl
 plt.style.use( 'paper' )
-from trajalign_tmp.traj import Traj
+from trajalign.traj import Traj
 import numpy as np
 
 #--------------TRAJECTORY DEFINITIONS---------------------
