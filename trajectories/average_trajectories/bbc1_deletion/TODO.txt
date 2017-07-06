@@ -1,0 +1,6 @@
+
+- merge current branch
+- unify_start_end as False as DEfault
+- output all starts and ends of the alligned trajectories as annotation
+- output the average start and end (and hteri sd) in the annotations
+
