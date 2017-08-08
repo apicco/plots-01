@@ -104,7 +104,7 @@ def myplot( obj , tt , what , label , col , t0 = 0 , x0 = 0 , x_scale = 1 , v = 
 	obj.plot( t.t() - t0 , x , linewidth = 1.5 , color = col , label = label )
 
 #--------------GRAPHICS-DEFINITIONS---------------------
-def ref_lines( obj , xlim , ylim ) :
+def ref_lines( obj , xlim , ylim , timepoint2 = True ) :
 
 	#colors of r lines
 	mt_color ="#000000" #"#8e857e"#"#cbbeb5"
@@ -112,7 +112,7 @@ def ref_lines( obj , xlim , ylim ) :
 	t0_color = zero_color #"#8e857e"
 
 	obj.plot( [ 0 , 0 ] , ylim , color = t0_color , linestyle = '-' ) #, label = '$t = 0$ s' )
-	obj.plot( [ -2 , -2 ] , ylim , color = mt_color , linestyle = '--' , label = '$t = -2$ s' )
+	if ( timepoint2 ) : obj.plot( [ -2 , -2 ] , ylim , color = mt_color , linestyle = '--' , label = '$t = -2$ s' )
 	obj.plot( xlim , [ 0 , 0 ] , color = zero_color , linestyle = '-' )
 
 

@@ -165,19 +165,19 @@
              32.085      3.56239976318    -0.623948362958     0.194386431442               18.0     0.465417563095     0.311617681839    0.0295585152618
             32.1885      2.97885549027     -0.43998412757     0.200890435341               18.0     0.497198632276     0.496691221484    0.0202548482408
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
-# experiment: ../../raw_trajectories/bbc1_deletion/140115_3016_fast
 # notes: Arc18-GFP trajectory in the bbc1 deletion strain.
-# delta_t: 0.1035
-# date: 15/01/15
-# path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/bbc1_deletion/../../raw_trajectories/bbc1_deletion/140115_3016_fast
-# mean_ends: 31.5527142857
-# std_starts: 2.0707464853
-# n_starts: 42
-# t_unit: s
-# fimax: TRUE
 # protein: Arc18-GFP
-# std_ends: 2.47147095339
-# mean_starts: 15.7738928571
-# coord_unit: pxl
-# n_ends: 49
+# path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/bbc1_deletion/../../raw_trajectories/bbc1_deletion/140115_3016_fast
 # reference_file: 37.data
+# std_ends: 2.47147095339
+# n_starts: 42
+# experiment: ../../raw_trajectories/bbc1_deletion/140115_3016_fast
+# n_ends: 49
+# mean_starts: 15.7738928571
+# mean_ends: 31.5527142857
+# t_unit: s
+# delta_t: 0.1035
+# coord_unit: pxl
+# std_starts: 2.0707464853
+# fimax: TRUE
+# date: 15/01/15

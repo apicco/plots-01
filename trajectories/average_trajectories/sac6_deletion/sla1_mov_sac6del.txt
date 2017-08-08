@@ -78,18 +78,18 @@
              30.186      2.84496365088     -1.21518287911    0.0506032986302                2.0     0.390527550604     0.114563322582    0.0530502977381
              30.537      1.64554893913     -1.28248064465     0.186967933185                1.0                0.0                0.0                0.0
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
-# coord_unit: pxl
-# date: 03/03/15
-# std_starts: 1.9305
-# experiment: ../../raw_trajectories/sac6_deletion/150303_MKY3060_mov
-# mean_ends: 27.9797142857
-# mean_starts: 6.1425
-# delta_t: 0.351
-# std_ends: 3.66077199955
-# path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/sac6_deletion/../../raw_trajectories/sac6_deletion/150303_MKY3060_mov
-# t_unit: s
-# n_ends: 7
-# reference_file: 07-mov.txt
-# protein: Sla1-GFP
 # n_starts: 2
+# delta_t: 0.351
+# date: 03/03/15
+# protein: Sla1-GFP
+# coord_unit: pxl
+# n_ends: 7
+# mean_ends: 27.9797142857
+# t_unit: s
+# experiment: ../../raw_trajectories/sac6_deletion/150303_MKY3060_mov
+# std_ends: 3.66077199955
+# std_starts: 1.9305
+# mean_starts: 6.1425
+# path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/sac6_deletion/../../raw_trajectories/sac6_deletion/150303_MKY3060_mov
+# reference_file: 07-mov.txt
 # notes: Sla1-GFP trajectory showing succesful invagination, in the sac6 deletion strain.

@@ -298,26 +298,26 @@
               19.289       1.36050787174     -0.318056915376      0.169508328538                21.0      0.297524178354      0.259922352599       0.02247051099
              19.3935       1.46721314625     -0.655083045472      0.153696062976                21.0      0.294053709757      0.255261705041     0.0355947659526
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
-# t_unit: s
-# alignment_translation: [-0.75233716869149325, -0.029281861793394287] pxl
-# coord_unit: pxl
-# alignment_translation_SE: [0.10416611328625421, 0.06383840552881416] pxl
 # original_file: sla1_bbc1del.txt
-# mean_starts: -12.4355
-# n_starts: 11
-# date: 22/12/10
-# aligned_to: abp1_bbc1del.txt
-# path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/bbc1_deletion/../../raw_trajectories/bbc1_deletion/101222_Sla1_bbc1delta_MD
-# alignment_lag: 5.077 s
-# delta_t: 0.1045
-# alignment_angle: -0.095317600407 rad
-# reference_file: 32.data
-# std_starts: 7.31133479605
-# n_ends: 48
+# alignment_translation: [-0.75233716869149325, -0.029281861793394287] pxl
 # mean_ends: 13.6611979167
-# alignment_angle_SE: 0.0816499449642 rad
-# notes: Sla1-GFP trajectory in the bbc1 deletion strain.
-# protein: Sla1-GFP
-# experiment: ../../raw_trajectories/bbc1_deletion/101222_Sla1_bbc1delta_MD
-# std_ends: 2.5497196593
 # alignment_lag_SE: 0.574276933346 s
+# delta_t: 0.1045
+# coord_unit: pxl
+# alignment_lag: 5.077 s
+# n_ends: 48
+# alignment_translation_SE: [0.10416611328625421, 0.06383840552881416] pxl
+# aligned_to: abp1_bbc1del.txt
+# date: 22/12/10
+# reference_file: 32.data
+# experiment: ../../raw_trajectories/bbc1_deletion/101222_Sla1_bbc1delta_MD
+# mean_starts: -12.4355
+# t_unit: s
+# std_starts: 7.31133479605
+# path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/bbc1_deletion/../../raw_trajectories/bbc1_deletion/101222_Sla1_bbc1delta_MD
+# alignment_angle_SE: 0.0816499449642 rad
+# protein: Sla1-GFP
+# notes: Sla1-GFP trajectory in the bbc1 deletion strain.
+# std_ends: 2.5497196593
+# alignment_angle: -0.095317600407 rad
+# n_starts: 11

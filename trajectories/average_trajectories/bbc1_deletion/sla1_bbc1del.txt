@@ -298,18 +298,18 @@
               14.212       2.33067718199     -0.109279916244      0.169508328538                21.0      0.276539757126      0.181167632677       0.02247051099
              14.3165       2.46897399077     -0.434620692443      0.153696062976                21.0      0.267180831869      0.162331700672     0.0355947659526
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
-# t_unit: s
-# n_starts: 11
-# reference_file: 32.data
-# mean_starts: -12.4355
-# n_ends: 48
 # notes: Sla1-GFP trajectory in the bbc1 deletion strain.
+# t_unit: s
 # protein: Sla1-GFP
-# coord_unit: pxl
-# std_starts: 7.31133479605
-# delta_t: 0.1045
-# mean_ends: 13.6611979167
-# std_ends: 2.5497196593
 # path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/bbc1_deletion/../../raw_trajectories/bbc1_deletion/101222_Sla1_bbc1delta_MD
 # experiment: ../../raw_trajectories/bbc1_deletion/101222_Sla1_bbc1delta_MD
+# mean_ends: 13.6611979167
+# reference_file: 32.data
+# delta_t: 0.1045
+# std_starts: 7.31133479605
+# n_ends: 48
+# coord_unit: pxl
+# mean_starts: -12.4355
 # date: 22/12/10
+# n_starts: 11
+# std_ends: 2.5497196593

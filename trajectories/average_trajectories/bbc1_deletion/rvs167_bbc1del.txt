@@ -69,18 +69,18 @@
              17.8695        2.9449111139     -0.381230792346      0.073438124915                27.0      0.179241340215      0.263138981673     0.0140794526946
               17.974       2.87044486899     -0.376293567399     0.0734062426304                22.0       0.12879048431      0.245334399074     0.0155944869636
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
-# n_starts: 52
-# delta_t: 0.1045
-# date: 19/01/11
-# path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/bbc1_deletion/../../raw_trajectories/bbc1_deletion/110119_Rvs167_bbc1del_MD
-# experiment: ../../raw_trajectories/bbc1_deletion/110119_Rvs167_bbc1del_MD
-# std_ends: 1.04662644426
 # notes: Rvs167-GFP trajectory in the bbc1 deletion strain.
-# mean_starts: 11.207625
-# coord_unit: pxl
-# t_unit: s
-# mean_ends: 17.813984375
-# std_starts: 1.5414090609
-# n_ends: 64
+# experiment: ../../raw_trajectories/bbc1_deletion/110119_Rvs167_bbc1del_MD
 # protein: Rvs167-GFP
+# n_ends: 64
 # reference_file: 21.data
+# n_starts: 52
+# std_starts: 1.5414090609
+# mean_starts: 11.207625
+# std_ends: 1.04662644426
+# t_unit: s
+# delta_t: 0.1045
+# mean_ends: 17.813984375
+# path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/bbc1_deletion/../../raw_trajectories/bbc1_deletion/110119_Rvs167_bbc1del_MD
+# coord_unit: pxl
+# date: 19/01/11

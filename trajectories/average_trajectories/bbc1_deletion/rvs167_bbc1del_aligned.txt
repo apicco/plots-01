@@ -69,26 +69,26 @@
            20.65825      2.46093592698    -0.549641976501     0.073438124915               27.0     0.201504092768     0.324200603725    0.0140794526946
            20.76275      2.38704176018     -0.53918970718    0.0734062426304               22.0     0.157960713638     0.306244447039    0.0155944869636
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
-# aligned_to: abp1_bbc1del.txt
-# t_unit: s
-# alignment_translation: [0.26339236629032947, -0.024357275206450084] pxl
 # reference_file: 21.data
-# delta_t: 0.1045
 # alignment_lag: 2.78875 s
-# coord_unit: pxl
-# notes: Rvs167-GFP trajectory in the bbc1 deletion strain.
-# mean_starts: 11.207625
+# aligned_to: abp1_bbc1del.txt
 # n_starts: 52
-# alignment_angle_SE: 0.0826524562339 rad
-# experiment: ../../raw_trajectories/bbc1_deletion/110119_Rvs167_bbc1del_MD
-# n_ends: 64
-# alignment_translation_SE: [0.071047424014285945, 0.045628059606183546] pxl
-# mean_ends: 17.813984375
-# std_starts: 1.5414090609
-# date: 19/01/11
-# alignment_angle: -0.074312359841 rad
-# std_ends: 1.04662644426
-# protein: Rvs167-GFP
-# original_file: rvs167_bbc1del.txt
 # alignment_lag_SE: 0.14888775011 s
+# protein: Rvs167-GFP
+# t_unit: s
+# mean_starts: 11.207625
+# date: 19/01/11
+# n_ends: 64
+# original_file: rvs167_bbc1del.txt
+# delta_t: 0.1045
+# alignment_angle: -0.074312359841 rad
+# std_starts: 1.5414090609
+# alignment_translation_SE: [0.071047424014285945, 0.045628059606183546] pxl
+# coord_unit: pxl
+# std_ends: 1.04662644426
+# notes: Rvs167-GFP trajectory in the bbc1 deletion strain.
+# experiment: ../../raw_trajectories/bbc1_deletion/110119_Rvs167_bbc1del_MD
+# alignment_angle_SE: 0.0826524562339 rad
+# mean_ends: 17.813984375
+# alignment_translation: [0.26339236629032947, -0.024357275206450084] pxl
 # path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/bbc1_deletion/../../raw_trajectories/bbc1_deletion/110119_Rvs167_bbc1del_MD

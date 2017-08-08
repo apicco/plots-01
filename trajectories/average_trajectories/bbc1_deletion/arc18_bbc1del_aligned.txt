@@ -165,27 +165,27 @@
              24.9945       3.39640925091     -0.712905107614      0.194386431442                18.0      0.469744335483      0.332517360086     0.0295585152618
               25.098       2.81477412274     -0.522991084893      0.200890435341                18.0      0.501040696164      0.506474302454     0.0202548482408
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
-# mean_starts: 15.7738928571
-# aligned_to: abp1_bbc1del.txt
-# alignment_angle: -0.0102125657493 rad
-# reference_file: 37.data
-# mean_ends: 31.5527142857
-# n_ends: 49
-# original_file: arc18_bbc1del.txt
-# date: 15/01/15
-# path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/bbc1_deletion/../../raw_trajectories/bbc1_deletion/140115_3016_fast
-# coord_unit: pxl
-# alignment_lag: -7.0905 s
-# alignment_translation_SE: [0.059971096574413928, 0.036905504758780204] pxl
-# t_unit: s
-# delta_t: 0.1035
-# experiment: ../../raw_trajectories/bbc1_deletion/140115_3016_fast
 # n_starts: 42
-# notes: Arc18-GFP trajectory in the bbc1 deletion strain.
-# std_starts: 2.0707464853
+# path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/bbc1_deletion/../../raw_trajectories/bbc1_deletion/140115_3016_fast
 # std_ends: 2.47147095339
-# alignment_translation: [-0.15943273805263403, -0.052608672784311514] pxl
-# alignment_lag_SE: 0.152716206203 s
-# alignment_angle_SE: 0.030862408279 rad
 # protein: Arc18-GFP
+# alignment_lag_SE: 0.152716206203 s
+# alignment_translation: [-0.15943273805263403, -0.052608672784311514] pxl
+# mean_starts: 15.7738928571
+# alignment_angle_SE: 0.030862408279 rad
+# delta_t: 0.1035
+# alignment_translation_SE: [0.059971096574413928, 0.036905504758780204] pxl
+# original_file: arc18_bbc1del.txt
+# n_ends: 49
+# date: 15/01/15
+# coord_unit: pxl
+# experiment: ../../raw_trajectories/bbc1_deletion/140115_3016_fast
+# alignment_lag: -7.0905 s
+# mean_ends: 31.5527142857
+# reference_file: 37.data
+# t_unit: s
+# alignment_angle: -0.0102125657493 rad
 # fimax: TRUE
+# std_starts: 2.0707464853
+# aligned_to: abp1_bbc1del.txt
+# notes: Arc18-GFP trajectory in the bbc1 deletion strain.

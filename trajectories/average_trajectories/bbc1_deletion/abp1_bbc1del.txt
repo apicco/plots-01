@@ -190,19 +190,19 @@
               26.125       1.91708617558     -0.625070417021      0.127908543394                19.0      0.405848537107      0.482286841887     0.0205936584117
              26.2295       1.90070406629     -0.740875628265      0.125352885538                17.0      0.304525123615      0.330128466561     0.0283906406795
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------
-# reference_file: 49.data
-# mean_starts: 7.037125
-# std_ends: 2.71714240099
-# std_starts: 1.94418811381
-# n_ends: 42
-# protein: Abp1-GFP
-# fimax: TRUE
-# t_unit: s
-# delta_t: 0.1045
-# date: 31/01/11
-# experiment: ../../raw_trajectories/bbc1_deletion/110131_Abp1_bbc1del_MD
 # notes: Abp1 trajectory in bbc1 deletion strains. The average is used as a reference to align all other average trajectories from bbc1 delta strains
-# coord_unit: pxl
-# path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/bbc1_deletion/../../raw_trajectories/bbc1_deletion/110131_Abp1_bbc1del_MD
-# mean_ends: 25.4955119048
 # n_starts: 44
+# t_unit: s
+# n_ends: 42
+# mean_ends: 25.4955119048
+# std_ends: 2.71714240099
+# date: 31/01/11
+# std_starts: 1.94418811381
+# protein: Abp1-GFP
+# delta_t: 0.1045
+# reference_file: 49.data
+# path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/bbc1_deletion/../../raw_trajectories/bbc1_deletion/110131_Abp1_bbc1del_MD
+# coord_unit: pxl
+# fimax: TRUE
+# mean_starts: 7.037125
+# experiment: ../../raw_trajectories/bbc1_deletion/110131_Abp1_bbc1del_MD

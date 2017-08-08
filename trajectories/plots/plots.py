@@ -70,21 +70,21 @@ t0_sdm = 26.8
 
 #axis lims
 movlim = ( -80 , 280 )
-tlim = ( -28 , 16 )
+tlim = ( -28 , 10 )
 
-f , ( sdr , sdm ) = plt.subplots( 1 , 2 , gridspec_kw = { 'height_ratios' : [ 1 , 1 ] } , figsize = ( 9 , 9 ) , sharey = True )
+f , ( sdr , sdm ) = plt.subplots( 1 , 2 , gridspec_kw = { 'height_ratios' : [ 1 , 1 ] } , figsize = ( 9 , 9 ) , sharey = False )
 
 myplot( sdm , sla1 , what = 'coord' , col = '#000000' , label = 'Sla1' , x_scale = 100 , t0 = t0 , x0 = x0 )
-myplot( sdm , sla1_sdm , what = 'coord' , col = '#D7110E' , x_scale = 64.5 , t0 = t0_sdm , x0 = x0_sdm , label = 'Sla1 $sac6\Delta$\n(n=' + str( int( max( sla1_sdm.n() ) ) ) + ')' , smooth_bin = 2 )
+myplot( sdm , sla1_sdm , what = 'coord' , col = '#D7110E' , x_scale = 64.5 , t0 = t0_sdm , x0 = x0_sdm , label = 'Sla1 $sac6\Delta$\n(n=' + str( int( max( sla1_sdm.n() ) ) ) + ')' , smooth_bin = 3 )
 #sdm.errorbar( sla1_sdm.t() - t0_sdm , 64.5 * ( sla1_sdm.coord()[ 0 ] - x0_sdm ) , yerr = 1.96 * 64.5 * sla1_sdm.coord_err()[ 0 ] , color = '#D7110E' , fmt = '.' , label = 'Sla1 $sac6\Delta$\n(n=' + str( int( max( sla1_sdm.n() ) ) ) + ')' )
 
-ref_lines( sdm , tlim , movlim )
+ref_lines( sdm , tlim , movlim , timepoint2 = False )
 
 myplot( sdr , sla1 , what = 'coord' , col = '#000000' , label = 'Sla1' , x_scale = 100 , t0 = t0 , x0 = x0 )
 myplot( sdr , sla1_sdr , what = 'coord' , col = '#D7110E' , x_scale = 64.5 , t0 = t0_sdr , x0 = x0_sdr , label = 'Sla1 $sac6\Delta$\n(n=' + str( int( max( sla1_sdr.n() ) ) ) + ')' , smooth_bin = 2 )
 #sdr.errorbar( sla1_sdr.t() - t0_sdr , 64.5 * ( sla1_sdr.coord()[ 0 ] - x0_sdr ) , yerr = 1.96 * 64.5 * sla1_sdr.coord_err()[ 0 ] , color = '#D7110E' , fmt = '.' , label )
 
-ref_lines( sdr , tlim , movlim )
+ref_lines( sdr , tlim , movlim , timepoint2 = False )
 #myplot( sdr , sla1_sdr , what = 'coord' , col = '#D7110E' , label = 'Sla1 $sac6\Delta$' , x_scale = 64.5 , t0 = t0_sdr , x0 = x0_sdr )
 
 #NOTE: PROBABLY WANT TO REMOVE THE OPTION TO SHOTEN THE TRAJECTORY TO THE MEAN START AND END FOR SLA1 MOV, TOO FEW TRAJECTORIES!!!
@@ -97,8 +97,10 @@ plt.ylim( movlim )
 plt.legend( loc = 'upper left' , numpoints = 1 )
 
 plt.subplot( sdm )
+plt.ylabel( 'Inward movement (nm)' , fontsize = 24 )
 plt.xlabel( 'Time (' + abp1_bd.annotations( 't_unit' ) + ')' , fontsize = 24 )
 plt.xlim( tlim )
+plt.ylim( movlim )
 plt.legend( loc = 'upper left'  , numpoints = 1 )
 
 
@@ -130,19 +132,20 @@ t0_bd = rvs167_bd.t( rp_bd ) - shift_t0
 #axis lims
 movlim = ( -50 , 450 )
 filim = ( -50 , 1000 )
-tlim = ( -27 , 10 )
+#tlim = ( -27 , 10 )
+tlim = ( -31 , 10 )
 
-f , ( s , r , a , fi ) = plt.subplots( 4 , 1 , gridspec_kw = { 'height_ratios' : [ 1 , 1 , 1 , 1 ] } , figsize = ( 5 , 20) , sharex = True )
+f , ( s , r , a , fi ) = plt.subplots( 4 , 1 , gridspec_kw = { 'height_ratios' : [ 1 , 1 , 1 , 1 ] } , figsize = ( 5 , 20) , sharex = False )
 
 
-area( s , abp1_bd.start() , sla1_bd.end() , movlim , yellow , t0 = t0_bd )
-area( s , sla1_bd.end() , abp1_bd.end() , movlim , red , t0 = t0_bd )
+#area( s , abp1_bd.start() , sla1_bd.end() , movlim , yellow , t0 = t0_bd )
+#area( s , sla1_bd.end() , abp1_bd.end() , movlim , red , t0 = t0_bd )
 myplot( s , sla1 , what = 'coord' , col = '#000000' , label = 'Sla1' , x_scale = 100 , t0 = t0 , x0 = x0 )
 myplot( s , sla1_bd , what = 'coord' , col = '#D7110E' , label = 'Sla1 $bbc1\Delta$' , x_scale = 100 , t0 = t0_bd , x0 = x0_bd )
 ref_lines( s , tlim , movlim )
 
-area( r , abp1_bd.start() , abp1_bd.end() , movlim , yellow , t0 = t0_bd )
-area( r , rvs167_bd.start() , rvs167_bd.end() , movlim , red , t0 = t0_bd )
+#area( r , abp1_bd.start() , abp1_bd.end() , movlim , yellow , t0 = t0_bd )
+#area( r , rvs167_bd.start() , rvs167_bd.end() , movlim , red , t0 = t0_bd )
 myplot( r , rvs167 , what = 'coord' , col = '#000000' , label = 'Rvs167' , x_scale = 100 , t0 = t0 , x0 = x0 )
 myplot( r , rvs167_bd , what = 'coord' , col = '#D7110E' , label = 'Rvs167 $bbc1\Delta$' , x_scale = 100 , t0 = t0_bd , x0 = x0_bd )
 ref_lines( r , tlim , movlim )
@@ -156,21 +159,28 @@ myplot( fi , abp1_bd , what = 'mol' , col = '#D7110E' , label = 'Abp1 $bbc1\Delt
 ref_lines( fi , tlim , filim )
 
 plt.subplot( a )
+plt.xlabel( 'Time (' + abp1_bd.annotations( 't_unit' ) + ')' , fontsize = 24 )
 plt.ylabel( 'Inward movement (nm)' , fontsize = 24 )
 plt.ylim( movlim )
+plt.xlim( tlim )
 plt.legend( loc = 'upper left' )
 
 plt.subplot( r )
+plt.xlabel( 'Time (' + abp1_bd.annotations( 't_unit' ) + ')' , fontsize = 24 )
 plt.ylabel( 'Inward movement (nm)' , fontsize = 24 )
 plt.ylim( movlim )
+plt.xlim( tlim )
 plt.legend( loc = 'upper left' )
 
 plt.subplot( s )
+plt.xlabel( 'Time (' + abp1_bd.annotations( 't_unit' ) + ')' , fontsize = 24 )
 plt.ylabel( 'Inward movement (nm)' , fontsize = 24 )
 plt.ylim( movlim )
+plt.xlim( tlim )
 plt.legend( loc = 'upper left' )
 
 plt.subplot( fi )
+plt.xlabel( 'Time (' + abp1_bd.annotations( 't_unit' ) + ')' , fontsize = 24 )
 plt.ylabel( 'Number of molecules' , fontsize = 24 )
 plt.ylim( filim )
 plt.legend( loc = 'upper left' )
@@ -216,11 +226,11 @@ f.savefig( 'plot_bbc1del_trajectories.png' )
 #--------------TRAJECTORY TIME AND SPATIAL ALIGNMENT bbc1delta---------------------
 
 las17 = Traj()
-las17.load('las17.txt' , t = 0 , coord = ( 2 , 3 ) , mol = 8 , coord_err = ( 4 , 5 ) , mol_err = 9 , n = 10 )
+las17.load('../average_trajectories/wild_type/las17.txt' , t = 0 , coord = ( 2 , 3 ) , mol = 8 , coord_err = ( 4 , 5 ) , mol_err = 9 , n = 10 )
 las17.input_values( 'mol_err' , las17.mol_err() / 1.96 )
 
 las17_bd = Traj()
-las17_bd.load('las17_bbc1del.txt' , t = 0 , coord = ( 2 , 3 ) , mol = 8 , coord_err = ( 4 , 5 ) , mol_err = 9 , n = 10 )
+las17_bd.load('../average_trajectories/bbc1_deletion/las17_bbc1del.txt' , t = 0 , coord = ( 2 , 3 ) , mol = 8 , coord_err = ( 4 , 5 ) , mol_err = 9 , n = 10 )
 las17_bd.input_values( 'mol_err' , las17_bd.mol_err() / 1.96 )
 
 f , ( m ) = plt.subplots( 1 , 1 , figsize = ( 5 , 5 ) , sharex = True )
@@ -244,17 +254,18 @@ plt.savefig( 'las17.pdf' )
 
 #--------------Rvs167 lifetime and arc18 in bbc1delta---------------------
 
-f , ( r_fi , arc , arc_fi ) = plt.subplots( 3 , 1 , gridspec_kw = { 'height_ratios' : [ 1 , 1 , 1 ] } , figsize = ( 5 , 15) , sharex = True )
+f , ( r_fi , arc_fi ) = plt.subplots( 2 , 1 , gridspec_kw = { 'height_ratios' : [ 1 , 1 ] } , figsize = ( 5 , 10) , sharex = False )
+#f , ( r_fi , arc , arc_fi ) = plt.subplots( 3 , 1 , gridspec_kw = { 'height_ratios' : [ 1 , 1 , 1 ] } , figsize = ( 5 , 15) , sharex = False )
 
-area( r_fi , abp1_bd.start() , abp1_bd.end() , movlim , yellow , t0 = t0_bd )
-area( r_fi , rvs167_bd.start() , rvs167_bd.end() , movlim , red , t0 = t0_bd )
+#area( r_fi , abp1_bd.start() , abp1_bd.end() , movlim , yellow , t0 = t0_bd )
+#area( r_fi , rvs167_bd.start() , rvs167_bd.end() , movlim , red , t0 = t0_bd )
 myplot( r_fi , rvs167 , what = 'mol' , col = '#000000' , label = 'Rvs167' , x_scale = 100 , t0 = t0 , x0 = x0 )
 myplot( r_fi , rvs167_bd , what = 'mol' , col = '#D7110E' , label = 'Rvs167 $bbc1\Delta$' , x_scale = 100 , t0 = t0_bd , x0 = x0_bd )
 ref_lines( r_fi , tlim , ( -10 , 350 ) )
 
-myplot( arc , arc18 , what = 'coord' , col = '#000000' , label = 'Arc18' , x_scale = 100 , t0 = t0 , x0 = x0 )
-myplot( arc , arc18_bd , what = 'coord' , col = '#D7110E' , label = 'Arc18 $bbc1\Delta$' , x_scale = 100 , t0 = t0_bd , x0 = x0_bd )
-ref_lines( arc , tlim , ( -50 , 600 ) )
+#myplot( arc , arc18 , what = 'coord' , col = '#000000' , label = 'Arc18' , x_scale = 100 , t0 = t0 , x0 = x0 )
+#myplot( arc , arc18_bd , what = 'coord' , col = '#D7110E' , label = 'Arc18 $bbc1\Delta$' , x_scale = 100 , t0 = t0_bd , x0 = x0_bd )
+#ref_lines( arc , tlim , ( -50 , 600 ) )
 
 myplot( arc_fi , arc18 , what = 'mol' , col = '#000000' , label = 'Arc18' , x_scale = 100 , t0 = t0 , x0 = x0 )
 myplot( arc_fi , arc18_bd , what = 'mol' , col = '#D7110E' , label = 'Arc18 $bbc1\Delta$' , t0 = t0_bd , x0 = x0_bd )
@@ -262,13 +273,15 @@ ref_lines( arc_fi , tlim , ( -25 , 450 ) )
 
 plt.subplot( r_fi )
 plt.ylabel( 'Number of molecules' , fontsize = 24 )
+plt.xlabel( 'Time (' + abp1_bd.annotations( 't_unit' ) + ')' , fontsize = 24 )
 plt.ylim( ( -10 , 350 ) )
+plt.xlim( tlim )
 plt.legend( loc = 'upper left' )
 
-plt.subplot( arc )
-plt.ylabel( 'Inward movement (nm)' , fontsize = 24 )
-plt.ylim( ( -50 , 600 ) )
-plt.legend( loc = 'upper left' )
+#plt.subplot( arc )
+#plt.ylabel( 'Inward movement (nm)' , fontsize = 24 )
+#plt.ylim( ( -50 , 600 ) )
+#plt.legend( loc = 'upper left' )
 
 plt.subplot( arc_fi )
 plt.ylabel( 'Number of molecules' , fontsize = 24 )

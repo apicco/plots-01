@@ -100,18 +100,18 @@
              30.888     0.103360334472     0.050008829328     0.118832195751                9.0     0.160176149225     0.112901831935   0.00726362141839
              31.239     0.327741691976    -0.253759505217     0.134195504969                6.0     0.245132055004     0.196081316627    0.0259939033247
 #-------------------------------------------------------------------------------------------------------------------------------------------------------
-# n_starts: 3
+# reference_file: 05-ret.txt
 # coord_unit: pxl
-# notes: Sla1-GFP trajectory showing retraction, in the sac6 deletion strain.
-# mean_ends: 29.8762941176
-# mean_starts: 4.914
+# protein: Sla1-GFP
+# delta_t: 0.351
 # std_ends: 3.46821425087
 # experiment: ../../raw_trajectories/sac6_deletion/150303_MKY3060_ret
+# notes: Sla1-GFP trajectory showing retraction, in the sac6 deletion strain.
 # path: /Users/andreapicco/Google Drive/RESEARCH/TRACKING/Sac6delta_Bbc1delta/trajectories/average_trajectories/sac6_deletion/../../raw_trajectories/sac6_deletion/150303_MKY3060_ret
-# delta_t: 0.351
-# n_ends: 17
-# reference_file: 05-ret.txt
-# date: 03/03/15
 # t_unit: s
+# n_starts: 3
+# mean_ends: 29.8762941176
 # std_starts: 7.72731635175
-# protein: Sla1-GFP
+# date: 03/03/15
+# n_ends: 17
+# mean_starts: 4.914
